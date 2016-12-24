@@ -1,5 +1,4 @@
 function gimmegooglefont(name){
-  var name = name;
   var el = document.createElement("Link");
   el.href = "https://fonts.googleapis.com/css?family=" + name;
   el.rel = "stylesheet";
@@ -19,4 +18,15 @@ function calculator(funct, num1, num2){
     case "div":
       return num1 / num2;
       break;
+    case "exp":
+      return num1^num2;
+      break;
+}
+
+function reverse(str) {
+    var neostr = "";
+    for (var i = str.length - 1; i >= 0; i--) { 
+        neostr += str[i]; 
+    }
+    return newString; 
 }
